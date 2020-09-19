@@ -12,6 +12,9 @@
 		CB4C5D0225157DF600372EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C5D0025157DF600372EFC /* Main.storyboard */; };
 		CB4C5D0425157DF700372EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4C5D0325157DF700372EFC /* Assets.xcassets */; };
 		CB4C5D0725157DF700372EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB4C5D0525157DF700372EFC /* LaunchScreen.storyboard */; };
+		CB4C5D0F2516B87F00372EFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C5D0E2516B87F00372EFC /* Constants.swift */; };
+		CB4C5D112516BB4700372EFC /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C5D102516BB4700372EFC /* Videos.swift */; };
+		CB4C5D132516BD5C00372EFC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C5D122516BD5C00372EFC /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		CB4C5D0325157DF700372EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4C5D0625157DF700372EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB4C5D0825157DF700372EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB4C5D0E2516B87F00372EFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB4C5D102516BB4700372EFC /* Videos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videos.swift; sourceTree = "<group>"; };
+		CB4C5D122516BD5C00372EFC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				CB4C5D0325157DF700372EFC /* Assets.xcassets */,
 				CB4C5D0525157DF700372EFC /* LaunchScreen.storyboard */,
 				CB4C5D0825157DF700372EFC /* Info.plist */,
+				CB4C5D0E2516B87F00372EFC /* Constants.swift */,
+				CB4C5D102516BB4700372EFC /* Videos.swift */,
+				CB4C5D122516BD5C00372EFC /* Model.swift */,
 			);
 			path = youtube;
 			sourceTree = "<group>";
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4C5D132516BD5C00372EFC /* Model.swift in Sources */,
 				CB4C5CFF25157DF600372EFC /* ViewController.swift in Sources */,
+				CB4C5D112516BB4700372EFC /* Videos.swift in Sources */,
 				CB4C5CFD25157DF600372EFC /* AppDelegate.swift in Sources */,
+				CB4C5D0F2516B87F00372EFC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
