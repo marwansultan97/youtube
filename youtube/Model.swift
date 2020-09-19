@@ -22,7 +22,7 @@ class Model {
                 return
             } else {
                 
-                
+                var i = 0
                 
                 
                 
