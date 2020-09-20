@@ -7,40 +7,39 @@
 //
 
 import Foundation
+import Alamofire
 
 
 class Model {
     
+
     
-    func getVideos() {
+    func getAlamofireVideos() {
         
-        guard let url = URL(string: Constants.API_URL) else {return}
         
-        URLSession.shared.dataTask(with: url) { (data, response, err) in
+        Alamofire.request(Constants.API_URL,method: .get).responseJSON { (response) in
             
-            if err != nil || data == nil {
+            let jsonData = response.data
+            
+            do {
+                
+                let decoder = JSONDecoder()
+                
+                decoder.dateDecodingStrategy = .iso8601
+                
+                let welcome = try decoder.decode(Welcome.self, from: jsonData!)
+                
+                print(welcome)
+                
+            } catch {
                 return
-            } else {
-                
-                var i = 0
-                
-                
-                
             }
-            
-            
-            
-            
-            
-            
-            
-        }.resume()
+        }
+
         
         
         
-        
-        
-    }
+}
     
     
     
@@ -48,4 +47,5 @@ class Model {
     
     
     
+
 }
