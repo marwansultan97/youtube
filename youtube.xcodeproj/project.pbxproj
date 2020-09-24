@@ -16,6 +16,12 @@
 		CB4C5D0F2516B87F00372EFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C5D0E2516B87F00372EFC /* Constants.swift */; };
 		CB4C5D112516BB4700372EFC /* ApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C5D102516BB4700372EFC /* ApiData.swift */; };
 		CB4C5D132516BD5C00372EFC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C5D122516BD5C00372EFC /* Model.swift */; };
+		CB5F9CDA2518EF1900780EA0 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F9CD92518EF1900780EA0 /* VideoTableViewCell.swift */; };
+		CB5F9CDC2519356000780EA0 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F9CDB2519356000780EA0 /* VideoViewController.swift */; };
+		CB5F9CDE251A6D8400780EA0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F9CDD251A6D8400780EA0 /* WebKit.framework */; };
+		CB5F9CE0251BD22900780EA0 /* DarkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F9CDF251BD22900780EA0 /* DarkModeViewController.swift */; };
+		CB5F9CE2251CD47300780EA0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F9CE1251CD47300780EA0 /* Theme.swift */; };
+		CB5F9CE4251CE12C00780EA0 /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5F9CE3251CE12C00780EA0 /* ConstantsTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		CB4C5D0E2516B87F00372EFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CB4C5D102516BB4700372EFC /* ApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiData.swift; sourceTree = "<group>"; };
 		CB4C5D122516BD5C00372EFC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CB5F9CD92518EF1900780EA0 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		CB5F9CDB2519356000780EA0 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		CB5F9CDD251A6D8400780EA0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CB5F9CDF251BD22900780EA0 /* DarkModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewController.swift; sourceTree = "<group>"; };
+		CB5F9CE1251CD47300780EA0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CB5F9CE3251CE12C00780EA0 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5F9CDE251A6D8400780EA0 /* WebKit.framework in Frameworks */,
 				7DEF824B6A466135E196578E /* Pods_youtube.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +71,7 @@
 		61CBA8399290F98BC45051BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB5F9CDD251A6D8400780EA0 /* WebKit.framework */,
 				A9AA732BDAA0811CCF3D6B10 /* Pods_youtube.framework */,
 			);
 			name = Frameworks;
@@ -67,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CB4C5CFB25157DF600372EFC /* youtube */,
+				CB4C5D0825157DF700372EFC /* Info.plist */,
 				CB4C5CFA25157DF600372EFC /* Products */,
 				1046E3AD5B15E49EA022B8B2 /* Pods */,
 				61CBA8399290F98BC45051BE /* Frameworks */,
@@ -85,16 +100,44 @@
 			isa = PBXGroup;
 			children = (
 				CB4C5CFC25157DF600372EFC /* AppDelegate.swift */,
-				CB4C5CFE25157DF600372EFC /* ViewController.swift */,
+				CB5F9CD72518ED1E00780EA0 /* ViewControllers */,
+				CB5F9CD62518ED1400780EA0 /* View */,
+				CB5F9CD82518ED2A00780EA0 /* Model */,
+			);
+			path = youtube;
+			sourceTree = "<group>";
+		};
+		CB5F9CD62518ED1400780EA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				CB4C5D0025157DF600372EFC /* Main.storyboard */,
 				CB4C5D0325157DF700372EFC /* Assets.xcassets */,
 				CB4C5D0525157DF700372EFC /* LaunchScreen.storyboard */,
-				CB4C5D0825157DF700372EFC /* Info.plist */,
-				CB4C5D0E2516B87F00372EFC /* Constants.swift */,
-				CB4C5D102516BB4700372EFC /* ApiData.swift */,
-				CB4C5D122516BD5C00372EFC /* Model.swift */,
+				CB5F9CD92518EF1900780EA0 /* VideoTableViewCell.swift */,
 			);
-			path = youtube;
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB5F9CD72518ED1E00780EA0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C5CFE25157DF600372EFC /* ViewController.swift */,
+				CB5F9CDB2519356000780EA0 /* VideoViewController.swift */,
+				CB5F9CDF251BD22900780EA0 /* DarkModeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CB5F9CD82518ED2A00780EA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C5D102516BB4700372EFC /* ApiData.swift */,
+				CB4C5D0E2516B87F00372EFC /* Constants.swift */,
+				CB4C5D122516BD5C00372EFC /* Model.swift */,
+				CB5F9CE1251CD47300780EA0 /* Theme.swift */,
+				CB5F9CE3251CE12C00780EA0 /* ConstantsTemplate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,11 +255,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5F9CE2251CD47300780EA0 /* Theme.swift in Sources */,
 				CB4C5D132516BD5C00372EFC /* Model.swift in Sources */,
+				CB5F9CDC2519356000780EA0 /* VideoViewController.swift in Sources */,
 				CB4C5CFF25157DF600372EFC /* ViewController.swift in Sources */,
 				CB4C5D112516BB4700372EFC /* ApiData.swift in Sources */,
 				CB4C5CFD25157DF600372EFC /* AppDelegate.swift in Sources */,
+				CB5F9CE0251BD22900780EA0 /* DarkModeViewController.swift in Sources */,
 				CB4C5D0F2516B87F00372EFC /* Constants.swift in Sources */,
+				CB5F9CDA2518EF1900780EA0 /* VideoTableViewCell.swift in Sources */,
+				CB5F9CE4251CE12C00780EA0 /* ConstantsTemplate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

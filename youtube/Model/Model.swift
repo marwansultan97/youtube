@@ -10,9 +10,14 @@ import Foundation
 import Alamofire
 
 
+protocol ModelDelegate {
+    func videoResult(response: Welcome)
+}
+
+
 class Model {
     
-
+    var delegate : ModelDelegate?
     
     func getAlamofireVideos() {
         
@@ -29,7 +34,8 @@ class Model {
                 
                 let welcome = try decoder.decode(Welcome.self, from: jsonData!)
                 
-                print(welcome)
+
+                self.delegate?.videoResult(response: welcome)
                 
             } catch {
                 return
